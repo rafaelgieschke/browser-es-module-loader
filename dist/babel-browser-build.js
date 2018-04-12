@@ -44395,8 +44395,10 @@ function hasOwnProperty(obj, prop) {
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./support/isBuffer":498,"_process":478,"inherits":497}],500:[function(require,module,exports){
 window.babel = require('babel-core');
-window.babelPluginTransformES2015ModulesSystemJS = require('babel-plugin-transform-es2015-modules-systemjs');
-window.babelPluginSyntaxDynamicImport = require('babel-plugin-syntax-dynamic-import');
-window.babelPluginSyntaxAsyncGenerators = require('babel-plugin-syntax-async-generators');
+window.babelPlugins = [
+  require('babel-plugin-transform-es2015-modules-systemjs'),
+  require('babel-plugin-syntax-dynamic-import'),
+  require('babel-plugin-syntax-async-generators'),
+];
 
 },{"babel-core":4,"babel-plugin-syntax-async-generators":54,"babel-plugin-syntax-dynamic-import":55,"babel-plugin-transform-es2015-modules-systemjs":56}]},{},[500]);

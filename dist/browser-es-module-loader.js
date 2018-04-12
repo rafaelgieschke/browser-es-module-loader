@@ -1144,7 +1144,7 @@ function dynamicExecute (execute, require, exports, module) {
   }
 }
 
-if (!window.babel || !window.babelPluginTransformES2015ModulesSystemJS || !window.babelPluginSyntaxDynamicImport || !window.babelPluginSyntaxAsyncGenerators)
+if (!window.babel || !window.babelPlugins)
   throw new Error('babel-browser-build.js must be loaded first');
 
 var loader;
@@ -1277,7 +1277,7 @@ BrowserESModuleLoader.prototype[RegisterLoader.instantiate] = function(key, proc
       moduleIds: false,
       sourceMaps: 'inline',
       babelrc: false,
-      plugins: [babelPluginSyntaxDynamicImport, babelPluginSyntaxAsyncGenerators, babelPluginTransformES2015ModulesSystemJS]
+      plugins: babelPlugins,
     });
 
     // evaluate without require, exports and module variables
