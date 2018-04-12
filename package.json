@@ -21,5 +21,8 @@
   "scripts": {
     "build": "mkdir -p dist && browserify src/babel-browser-build.js > dist/babel-browser-build.js && rollup -c",
     "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "babel-plugin-syntax-async-generators": "^6.13.0"
   }
 }
