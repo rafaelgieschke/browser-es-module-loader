@@ -10,15 +10,13 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-modules-systemjs": "^7.4.4",
     "browserify": "^13.1.0",
     "es-module-loader": "^2.0.0",
     "rollup": "^0.34.7",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "@babel/core": "^7.4.5",
-    "@babel/plugin-syntax-async-generators": "^7.2.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
-    "@babel/plugin-transform-modules-systemjs": "^7.4.4"
+    "rollup-plugin-node-resolve": "^2.0.0"
   },
   "scripts": {
     "build": "mkdir -p dist && browserify src/babel-browser-build.js > dist/babel-browser-build.js && rollup -c",
