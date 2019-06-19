@@ -14,6 +14,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-syntax-import-meta": "^7.2.0",
     "@babel/plugin-transform-modules-systemjs": "^7.4.4",
+    "@babel/plugin-transform-typescript": "^7.4.5",
     "browserify": "^13.1.0",
     "es-module-loader": "^2.0.0",
     "rollup": "^0.34.7",
